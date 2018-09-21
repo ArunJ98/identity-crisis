@@ -6,3 +6,23 @@ body{
   justify-content: center;
   font-family: 'Rubik', sans-serif;
 }
+
+.button {
+    background: #f7b733;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 30px;
+
+}
+
+.button:hover {
+	background: #f8c154;
+	transition: all linear 0.15s;
+}
