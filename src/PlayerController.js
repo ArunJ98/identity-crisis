@@ -7,9 +7,14 @@ class PlayerController extends React.Component {
     super();
   }
 
+  onEnterGame = (playerName, room, twitterName = '') => {
+    console.log("SUBMITTING");
+  }
+
   render() {
     return (
-      <PlayerChooseGame/>
+      <PlayerChooseGame
+        onEnterGame={this.onEnterGame}/>
     );
   }
 
