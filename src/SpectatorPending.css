@@ -1,0 +1,55 @@
+.SpectatorPending {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+}
+
+#spectatorPendingButton {
+  margin-left: 30px;
+  background: #4ABDAC;
+  border: 2px solid white;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 15px 50px;
+}
+
+.SpectatorPending-title {
+  margin-top: 7%;
+  margin-bottom: 0;
+  font-size: 4em;
+  padding-bottom: 0;
+  font-weight: bold;
+}
+
+.SpectatorPending-title-p {
+  margin-bottom: 0;
+}
+
+.profileImg {
+  background-color: "transparent";
+  width: 100%;
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+}
+
+.SpectatorPending-users {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.SpectatorPending-avatar {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.SpectatorPending-avatar-name {
+  font-size: 1.25em;
+  font-weight: bold;
+}

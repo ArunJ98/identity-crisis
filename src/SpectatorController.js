@@ -8,7 +8,7 @@ class SpectatorController extends React.Component {
     super();
 
     this.audio = new Audio(music);
-    this.audio.play();
+    //this.audio.play();
   }
 
   render() {
