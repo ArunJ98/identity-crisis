@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import HomePage from './HomePage.js'
 import SpectatorController from './SpectatorController.js'
 import PlayerController from './PlayerController.js'
+import PlayerVote from './PlayerVote.js'
 
 class GameController extends React.Component {
 
@@ -25,6 +26,9 @@ class GameController extends React.Component {
   }
 
   render() {
+
+    return <PlayerVote/>;
+
     if (this.state.experience == "HOME") {
       return (
         <HomePage

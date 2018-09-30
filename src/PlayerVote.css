@@ -1,0 +1,75 @@
+.PlayerVote {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  height: 100vh;
+}
+
+.PlayerVoteButtons{
+  padding-top: 150px;
+}
+
+.PlayerVote-Header {
+  position: absolute; top: 0; left: 0;
+  background-color: #f7b733;
+  width: 100%;
+  margin: auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.PlayerVote-Footer {
+  position: absolute; bottom: 0; left: 0;
+  background-color: #f7b733;
+  text-align: right;
+  color: white;
+  width: 100%;
+  height: 30px;
+  margin: auto;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.PlayerVote-Footer-Timer {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.PlayerVote-Footer-Bar {
+  position: absolute; bottom: 40px; left: 0;
+  background-color: #4ABDAC;
+  height: 3px;
+  margin: auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.PlayerVote-Header-Text {
+  font-size: 1.75em;
+  color: white;
+  padding: 0px;
+  padding-left: 10px;
+}
+
+#player-vote-btn{
+  margin-left: 30px;
+  background: white;
+  border: 1px solid #4ABDAC;
+  border-radius: 20px;
+  color: #4ABDAC;
+  font-size: 1.25em;
+  padding: 10px 60px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#player-vote-btn:hover {
+  background: #4ABDAC;
+  color: white;
+  transition: all linear 0.15s;
+}
