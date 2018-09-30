@@ -9,11 +9,19 @@
   margin-left: 30px;
   background: #4ABDAC;
   border: 2px solid white;
+  border-radius: 10px;
   color: white;
   font-size: 2em;
   font-weight: bold;
   padding: 15px 50px;
 }
+
+#spectatorPendingButton:hover {
+  background: #4ABDAC;
+  color: #f7b733;
+  border: 2px solid #f7b733;
+}
+
 
 .SpectatorPending-title {
   margin-top: 7%;

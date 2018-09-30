@@ -3,6 +3,12 @@ import './SpectatorPending.css';
 import { Button } from 'react';
 import guyProfile from './images/ic_guy.png'
 import girlProfile from './images/ic_girl.png'
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 
 class SpectatorPending extends React.Component {
@@ -28,7 +34,7 @@ class SpectatorPending extends React.Component {
   renderButton() {
     return (
       <div>
-        <a class="button" onClick={this.props.onMakeGame} role="button" id = "spectatorPending">Start Game!</a>
+        <a class="button" onClick={this.props.onMakeGame} role="button" id = "spectatorPendingButton">Start Game!</a>
       </div>
     )
   }
@@ -70,7 +76,12 @@ class SpectatorPending extends React.Component {
     );
   }
 
+
   render() {
+    if (isMobile) {
+      return (<div> <p> We currently do not support making games on mobile </p> </div>);
+    }
+    
     return (
       <div className="SpectatorPending">
         <div className="SpectatorPending-title">
