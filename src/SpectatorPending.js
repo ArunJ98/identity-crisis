@@ -3,6 +3,10 @@ import './SpectatorPending.css';
 import { Button } from 'react';
 import guyProfile from './images/ic_guy.png'
 import girlProfile from './images/ic_girl.png'
+import posed from "react-pose";
+import SpectatorPendingAvatar from './SpectatorPendingAvatar.js'
+
+
 import {
   BrowserView,
   MobileView,
@@ -21,13 +25,19 @@ class SpectatorPending extends React.Component {
     super()
 
     this.state = {
-      players:["Arun", "Da-Jin", "CHU CHU", "Charles", "Sam", "Victor", "Sammy", "Alex", "Chris", "Kyrie"]
+      players:["Arun1"]
     };
   }
 
+  componentDidMount() {
+    this.interval = setInterval(() => this.addPlayer("test"), 1000);
+  }
+
   addPlayer(player) {
+    const updatePlayers = this.state.players;
+    updatePlayers.push(player);
     this.setState({
-      players: this.state.players.push(player)
+      players: updatePlayers
     });
   }
 
@@ -40,25 +50,9 @@ class SpectatorPending extends React.Component {
   }
 
   renderPlayer(player) {
-    const numPlayers = this.state.players.length;
-    let male = Math.floor(Math.random() * 2);
-    const imgWidth = Math.max(70/numPlayers, 12) + "%";
-
-    if (male) {
-      return (
-          <div className="SpectatorPending-avatar" style={{width: imgWidth}}>
-            <img src={require("./images/ic_guy.png")} alt="" className="profileImg" />
-            <p className="SpectatorPending-avatar-name"> {player} </p>
-          </div>
-      );
-    } else {
-      return (
-          <div className="SpectatorPending-avatar" style={{width: imgWidth}}>
-            <img src={require("./images/ic_girl.png")} alt="" className="profileImg"/>
-            <p className="SpectatorPending-avatar-name"> {player} </p>
-          </div>
-      );
-    }
+    return <SpectatorPendingAvatar
+              playerName={player}
+              numPlayers={this.state.players.length}/>
   }
 
   renderPlayers() {
@@ -81,7 +75,7 @@ class SpectatorPending extends React.Component {
     if (isMobile) {
       return (<div> <p> We currently do not support making games on mobile </p> </div>);
     }
-    
+
     return (
       <div className="SpectatorPending">
         <div className="SpectatorPending-title">

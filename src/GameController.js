@@ -26,9 +26,6 @@ class GameController extends React.Component {
   }
 
   render() {
-
-    return <PlayerVote/>;
-
     if (this.state.experience == "HOME") {
       return (
         <HomePage
