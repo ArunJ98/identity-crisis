@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './SpectatorPending.css';
 import { Button } from 'react';
-import guyProfile from './images/ic_guy.png'
-import girlProfile from './images/ic_girl.png'
 import posed from "react-pose";
 import SpectatorPendingAvatar from './SpectatorPendingAvatar.js'
 

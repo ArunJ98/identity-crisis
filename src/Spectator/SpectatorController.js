@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SpectatorPending from './SpectatorPending.js'
+import SpectatorPending from './SpectatorPending/SpectatorPending.js'
 import music from './music.mp3'
 
 class SpectatorController extends React.Component {

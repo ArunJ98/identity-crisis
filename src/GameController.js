@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import HomePage from './HomePage.js'
-import SpectatorController from './SpectatorController.js'
-import PlayerController from './PlayerController.js'
-import PlayerVote from './PlayerVote.js'
+import SpectatorController from './Spectator/SpectatorController.js'
+import PlayerController from './Player/PlayerController.js'
+import PlayerVote from './Player/PlayerVote.js'
 
 class GameController extends React.Component {
 

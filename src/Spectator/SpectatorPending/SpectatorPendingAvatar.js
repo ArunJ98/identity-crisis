@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './SpectatorPending.css';
 import { Button } from 'react';
-import guyProfile from './images/ic_guy.png'
-import girlProfile from './images/ic_girl.png'
+import guyProfile from '../avatars/ic_guy.png'
+import girlProfile from '../avatars/ic_girl.png'
 import posed from "react-pose";
 
 import {
@@ -41,14 +41,14 @@ class SpectatorPendingAvatar extends React.Component {
     if (male) {
       return (
           <div className="SpectatorPending-avatar" style={{width: imgWidth}}>
-            <img src={require("./images/ic_guy.png")} alt="" className="profileImg" />
+            <img src={require("../avatars/ic_guy.png")} alt="" className="profileImg" />
             <p className="SpectatorPending-avatar-name"> {this.props.playerName} </p>
           </div>
       );
     } else {
       return (
           <div className="SpectatorPending-avatar" style={{width: imgWidth}}>
-            <img src={require("./images/ic_girl.png")} alt="" className="profileImg"/>
+            <img src={require("../avatars/ic_girl.png")} alt="" className="profileImg"/>
             <p className="SpectatorPending-avatar-name"> {this.props.playerName} </p>
           </div>
       );
